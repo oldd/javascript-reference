@@ -14,6 +14,7 @@ The __notional machine__ is a [mental model](https://www.youtube.com/watch?v=5K_
  
 Your brain will construct an understanding of how JS works whether or not you intentionally guide it, it's what brains do.  As great as this sounds it is really very dangerous.  JavaScript is complicated and it is very easy to come up with explanations that work for simple Codewars but are not accurate.  You won't notice at first, but as soon as you try to move on you will find it nearly impossible to understand what's going on.  Unlearning and relearning how JavaScript executes is very difficult and will take a lot of time.
 
+To help you build your Notional Machine, we've provided you with a step-through template meant to be used in conjunction with [PythonTutor (for JavaScript)](http://www.pythontutor.com/javascript.html#mode=edit) & interesting code samples.  With this template + PythonTutor you will learn to step through code just like JavaScript does, all while building your own study reference for the future.
 
 So stick to it!  These step-throughs aren't glamorous but they will help you learn JS better and faster than you thought was possible.
 
