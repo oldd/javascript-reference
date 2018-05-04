@@ -22,27 +22,27 @@ var var_anonymous = function() {}
 
 ## Step 0
 
-__Predicted Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: undefined
-    b. let_variable: undefined
+__Predicted Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: undefined  
+    b. let_variable: undefined  
   * _Objects_  
-    a. named: Function
-    b. var_anonymous: Funciton
-    c. let_anonymous: Function
-* __Other Contexts__
-  * no other contexts
+    a. named: Function  
+    b. var_anonymous: Funciton  
+    c. let_anonymous: Function  
+* __Other Contexts__  
+  * no other contexts  
 
-__Actual Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: undefined
-    b. var_anonymous: undefined
-  * _Objects_  
-    a. named: Function
-* __Other Contexts__
-  * no other contexts
+__Actual Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: undefined  
+    b. var_anonymous: undefined  
+  * _Objects_    
+    a. named: Function  
+* __Other Contexts__  
+  * no other contexts  
 
 Turns out variables declared with "let" are not hoisted.
 
@@ -52,14 +52,14 @@ Named functions are hoisted. But if you put an anonymous function behind a varia
 
 ## Step 1
 
-__Predicted Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: undefined
-    b. var_anonymous: undefined
-    c. let_variable: "let"
-  * _Objects_  
-    a. named: Function
+__Predicted Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: undefined  
+    b. var_anonymous: undefined  
+    c. let_variable: "let"  
+  * _Objects_    
+    a. named: Function  
 
 Got this one right.
 
@@ -67,14 +67,14 @@ Got this one right.
 
 ## Step 2
 
-__Predicted Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: "var"
-    b. var_anonymous: undefined
-    c. let_variable: "let"
-  * _Objects_  
-    a. named: Function
+__Predicted Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: "var"  
+    b. var_anonymous: undefined  
+    c. let_variable: "let"  
+  * _Objects_    
+    a. named: Function  
 
 Got this one right.
 
@@ -82,25 +82,25 @@ Got this one right.
 
 ## Step 3
 
-__Predicted Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: "var"
-    b. var_anonymous: undefined
-    c. let_variable: "let"
-    d. let_anonymous: undefined
-  * _Objects_  
-    a. named: Function
+__Predicted Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: "var"  
+    b. var_anonymous: undefined  
+    c. let_variable: "let"  
+    d. let_anonymous: undefined  
+  * _Objects_   
+    a. named: Function  
 
-__Actual Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: "var"
-    b. var_anonymous: undefined
-    c. let_variable: "let"
-  * _Objects_  
-    a. named: Function
-    b. let_anonymous: Function
+__Actual Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: "var"  
+    b. var_anonymous: undefined  
+    c. let_variable: "let"  
+  * _Objects_    
+    a. named: Function  
+    b. let_anonymous: Function  
 
 
 Turns out "let" variables are constructed __and__ given values in the same step.  In other words: "let" variables are not created until they are defined in the file.
@@ -109,15 +109,15 @@ ___
 
 ## Step 4
 
-__Predicted Happenings:__
-* __Global Context__
-  * _Primitives_  
-    a. var_variable: "var"
-    c. let_variable: "let"
-  * _Objects_  
-    a. named: Function
-    b. let_anonymous: Function
-    c. var_anonymous: Function
+__Predicted Happenings:__  
+* __Global Context__  
+  * _Primitives_    
+    a. var_variable: "var"  
+    c. let_variable: "let"  
+  * _Objects_    
+    a. named: Function  
+    b. let_anonymous: Function  
+    c. var_anonymous: Function  
 
 Got this one right.
 
