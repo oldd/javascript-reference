@@ -1,6 +1,8 @@
 # JavaScript 
 
-This repository is for reading and learning JavaScript, if you're a total beginner or a pro coming from another language.  You can use this repo as a reference and checklist as you cover the JavaScript language. To understand each piece of the language you will collect clear examples, study them carefully, and organize your analyses into your own personal JavaScript language reference.
+This repository is for reading and learning JavaScript, if you're a total beginner or a pro coming from another language.  You can use this repo as a reference and checklist as you cover the JavaScript language. To understand each piece of the language you will collect clear examples, study them carefully, and organize your analyses into your own personal JavaScript language reference.  
+
+Feel free to pull these examples from anywhere you like.  They can be code you wrote, exercises from somewhere like FreeCodeCamp, gists you collected, or examples from one of the resources below.  What's most important is that you do as many of these as you can!
 
 (this table of contents is just a starter, feel free to modify it and expand it as your understanding of JS grows)
 ### The JS Language:
